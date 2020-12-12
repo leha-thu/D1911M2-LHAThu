@@ -1,0 +1,984 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*CÁC DIV*/
+
+		.biggest
+		{
+			width: 100%;
+			height: 6000px;
+			background-color: cornflowerblue;
+		}
+
+
+		.melog
+		{
+			width: 100%;
+			height: 80px;
+			background-color:rgba(255,255,255,0.26);
+
+		}
+
+		.logo
+		{
+			width: 30%;
+			height: 90px;
+			float: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+
+		}
+
+		.menu
+		{
+			width: 70%;
+			height: 80px;
+			float: right;
+			font-size: 20px;
+			font-family: fontmot;
+
+		}
+
+		.headertop
+		{
+			width: 1920px;
+			height: 698px;
+			background: url( "../images/header1_01.jpg");
+		}
+
+
+		.headertext
+		{	
+			width: 700px;
+			height: 300px;
+			background-color: transparent;
+			float: left;
+			transform: translateX(430px);
+			font-family: fonthai;
+			color: #A9A9A9;
+			font-size: 22px;
+			
+			
+		}
+
+		.headtext2
+		{
+			font-family: fontba;
+			font-size: 50px;
+			letter-spacing: 10px;
+			line-height:10px;
+			margin-top: -15px;
+			color: #36AEEA;
+		}
+
+		.headtext1
+		{
+			font-family: fontmot;
+			font-size: 60px;
+			letter-spacing: 15px;
+			line-height: 10px;
+			margin-top: 60px;
+			color: white;
+		}
+
+/*ĐIỀU KIỆN CHO LOGO*/
+			.movelogo
+			{
+				transform: translateX(80px);
+
+			}
+
+
+
+/*BUTTONS*/
+
+		.button1
+		{
+			color: #36AEEA;
+			background-color: transparent;
+			border-color: #36AEEA;
+			border-style: solid;
+			width: 180px;
+			height: 50px;
+			font-size: 18px;
+			font-family: fontmot;
+			border-radius: 10px;
+			margin-top: -9px;
+			transform: translateX(200px);
+
+		}
+
+
+		
+
+
+/*HIỆU ỨNG BUTTON 1*/
+
+		.button1 a 
+		{
+			text-decoration: none;
+			color:#36AEEA;
+			font-size: 18px;
+		}
+
+		.button1:hover
+		{
+			color: black;
+			background-color: #36AEEA;
+			letter-spacing: 3px;
+			font-size: 20px;
+		}
+
+		.button1 a:hover 
+		{
+			color: black;
+			background-color: #36AEEA;
+			transition: 0.3s;
+			letter-spacing: 6px;
+		}
+
+
+
+
+/*ĐIỀU KIỆN CHO MENU*/
+
+		ul li a
+		{
+			text-decoration: none;
+			color: #A9A9A9;
+		}
+
+
+
+		ul li
+		{
+			list-style: none;
+			float: left;
+			padding: 5px 30px;
+			position: relative;
+
+		}
+
+		ul li ul
+		{
+			position: absolute;
+			left: 0px;
+			padding: 0px;
+			visibility: hidden;
+			margin: 7px 0px;
+			width: 100px;
+			left: 0px;
+
+		}
+
+		ul li ul li
+		{
+			width: 150px;
+			font-size: 20px;
+		}
+		
+		ul li ul li a 
+		{
+
+			color: black;
+		}
+		ul li a:hover
+		{
+			color: #36AEEA;
+			font-size: 24px;
+			transition: 0.3s;
+			
+			
+		}
+
+		ul li:hover ul
+		{
+			visibility: visible;
+
+		}
+
+		ul li ul li:hover a
+		{
+			color: black;
+			
+
+		}
+
+/*FONTS*/
+	
+		@font-face
+		{
+			font-family: fontmot;
+			src: url( "../font/BebasNeue-Regular.ttf");
+		}
+
+		@font-face
+		{
+			font-family: fonthai;
+			src: url("../font/CormorantGaramond-Regular.ttf")
+
+		}
+
+		@font-face
+		{
+			font-family: fontba;
+			src: url( "../font/SVN-Very Berry.ttf")
+
+		}		
+
+/*CONTENT*/
+		
+		.content		
+		{
+			width: 1920px;
+			height: 667px;
+			background: url( "../images/content1_02.jpg");
+		}
+		
+		
+		.content1
+		{	
+			width: 895px;
+			height: 667px;
+			background-color: transparent;
+			float: right;
+			transform: translateX(-175px);
+			
+		}
+
+		.content2		
+		{
+			width: 350px;
+			height: 350px;
+			background: url("../images/content2_03.jpg");
+			transform: translateY(280px);
+			
+		}
+
+		.content3		
+		{
+			width: 807px;
+			height: 570px;
+			background: url("../images/content3_03.jpg");
+			float: right;
+			transform: translateY(-30px);
+			
+		}
+
+		.contenttext
+		{	
+			width: 400px;
+			height: 667px;
+			background-color: transparent;
+			transform: translateX(390px);
+			font-family: fonthai;
+			line-height: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: #A9A9A9;
+			font-size: 16px;
+
+			
+		}
+
+		.aboutus
+		{
+			font-family: fontmot;
+			letter-spacing: 5px;
+			margin-bottom: 0px;
+			color: black;
+			margin-top: 40px;
+		}
+
+
+		.button2
+		{
+			background-color: #36AEEA;
+			color: white;
+			width: 150px;
+			height: 50px;
+			border-radius: 5px;
+			border: none;
+			font-family: fontmot;
+			letter-spacing: 2px;
+			font-size: 18px;
+			margin-top: 15px;
+		}
+
+				.button2 a 
+				{
+					text-decoration: none;
+					color:#36AEEA;
+				}
+
+				.button2:hover
+				{
+					color: black;
+					transition: 0.3s;
+					letter-spacing: 6px;
+				}
+
+
+		.moveline
+		{
+			transform: translateX(-150px);
+		}
+
+/*JOURNAL*/
+
+		.journal
+		{
+			width: 1920px;
+			height: 1064px;
+			background-color: #FFFFFF;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-family: fontmot;
+			letter-spacing: 5px;
+		}
+
+
+		.journal1
+		{
+			width: 1140px;
+			height: 760px;
+			background-color: #E6E6E6;
+			box-shadow: 5px 5px 30px 5px #E6E6E6; 
+
+		}
+
+		.journal2
+		{
+			width: 1140px;
+			height: 380px;
+			background-color: aquamarine;
+		}
+
+		.journal3
+		{
+			width: 380px;
+			height: 380px;
+			background-color: #FFFFFF;
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+
+		.journal5
+		{
+			width: 380px;
+			height: 380px;
+			background: url("../images/journal_03.png");
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+					.journal5 a:hover
+					{
+						transform: scale(1.2) rotate(45deg);
+						transition: 0.4s;
+					}
+
+
+
+		.journal6
+		{
+			width: 380px;
+			height: 380px;
+			background: url("../images/journal_05.png");
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+					.journal6 a:hover
+					{
+						transform: scale(1.2) rotate(45deg);
+						transition: 0.4s;
+					}
+
+
+
+		.journal7
+		{
+			width: 380px;
+			height: 380px;
+			background: url("../images/journal_09.png");
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+					.journal7 a:hover
+					{
+						transform: scale(1.2) rotate(45deg);
+						transition: 0.4s;
+					}
+
+
+
+
+		.journal31
+		{
+			width: 330px;
+			height: 290px;
+			background-color: transparent;
+			text-align: center;
+		}
+
+
+		.love
+		{
+			color: #36AEEA;
+			margin: 0px 10px 30px 10px;
+		}
+
+		.love1
+		{
+			letter-spacing: 3px;
+			line-height: 28px;
+			
+		}
+
+		.love2
+		{
+			font-family: fonthai;
+			color: #A9A9A9;
+			letter-spacing: 0px;
+			line-height: 25px;
+			margin-bottom: 0px; 
+			font-size: 18px;
+}
+
+		.love3
+		{
+			font-family: fonthai;
+			letter-spacing: 1px;
+			color: black;
+		}
+
+
+		.water
+		{
+			font-family: fonthai;
+			color: #A9A9A9;
+			letter-spacing: 0px;
+			line-height: 25px;
+			margin-bottom: 0px; 
+			font-size: 18px;
+			margin-top: 53px;
+		}
+
+/*OFFER*/
+
+		.offer
+		{
+			width: 1920px;
+			height: 651px;
+			background: url("../images/offer_02.jpg");
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+
+		.offer1
+		{
+			width: 1140px;
+			height: 651px;
+			background-color: transparent;
+			display: flex;
+  			flex-direction: column;
+  			justify-content: center;
+			float: left;
+			font-family: fonthai;
+			
+  			
+			
+		}
+
+		.moveline1
+		{
+			transform: translateX(-520px);
+		}
+
+
+		.formname
+		{
+			width: 300px;
+			height: 40px;
+			padding: 0px;
+			border: none;
+			border-radius: 5px;
+			
+		}
+
+		.orderbutton
+		{
+			width: 200px;
+			height: 42px;
+			background-color: #36AEEA;
+			border: none;
+			color: #FFFFFF;
+			font-family: fontmot;
+			border-radius: 5px;
+			letter-spacing: 2px;
+			font-size: 18px;
+		}
+
+
+					.orderbutton a 
+				{
+					text-decoration: none;
+					color:#FFFFFF;
+				}
+
+					.orderbutton a:hover
+					{
+						color: black;
+						transition: 0.3s;
+						letter-spacing: 6px;
+					}
+
+/*HOW WE WORK*/		
+
+		.howwework
+		{
+			width: 1920px;
+			height: 682px;
+			background-color: #FFFFFF;
+		}
+
+		.howweworktop
+		{
+			width: 1920px;
+			height: 212px;
+			background-color: #FFFFFF;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			font-family: fontmot;
+			letter-spacing: 5px;
+			line-height: 15px;
+		}
+
+		.howweworkbottom
+		{
+			width: 1920px;
+			height: 470px;
+			background-color: coral;
+		}
+
+		.hwwtext
+		{
+			width: 1920px;
+			height: 163px;
+			background-color: #FFFFFF;
+			display: flex;
+			justify-content: center;
+		}
+
+		.title
+		{
+			width: 235px;
+			height: 140px;
+			background-color: #FFFFFF;
+			font-family: fontmot;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			letter-spacing: 1px;
+			padding: 0px 30px;
+		
+		}
+
+		.text2
+		{
+			color: #A9A9A9;
+			transform: translateY(-35px);
+			font-family: fonthai;
+			letter-spacing: 0px;
+		}
+
+		
+		.hwwcircle
+		{
+			width: 1920px;
+			height: 307px;
+			background: url("../images/circle2_02.png");
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-content: flex-end;
+
+		}
+
+		#circle
+		{
+			width: 150px;
+			height: 150px;
+			background-color: #A9A9A9;
+			border-radius: 50%;
+			margin: 0px 65px;
+		}
+
+/*TRAVEL WITH US*/
+
+		.travel
+		{
+			width: 1920px;
+			height: 1056px;
+			background: url("../images/travel1_02.png");
+		}
+
+		
+		.traveltop
+		{
+			width: 1920px;
+			height: 198px;
+			background-color: transparent;
+			font-family: fontmot;
+			letter-spacing: 5px;
+			line-height: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.travelbottom
+		{
+			width: 1920px;
+			height: 382px;
+			background-color: transparent;
+			display: flex;
+			justify-content: center;
+		}
+
+			.pic1
+			{
+				width: 201px;
+				height: 382px;
+				background: url("../images/travel2_03.png");
+				margin: 0px 15px;
+			}
+
+			.pic2
+			{
+				width: 201px;
+				height: 382px;
+				background: url("../images/travel3_03.png");
+				margin: 0px 15px;
+			}
+
+			.pic3
+			{
+				width: 201px;
+				height: 382px;
+				background: url("../images/travel4_03.png");
+				margin: 0px 15px;
+			}
+
+			.pic4
+			{
+				width: 201px;
+				height: 382px;
+				background: url("../images/travel5_03.png");
+				margin: 0px 15px;
+			}
+
+			.pic5
+			{
+				width: 201px;
+				height: 382px;
+				background: url("../images/travel6_03.png");
+				margin: 0px 15px;
+			}
+
+
+		.travelbottom2
+		{
+			width: 150px;
+			height: 200px;
+			background-color: transparent;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			font-family: fonthai;
+			color: #FFFFFF;
+			margin: 70px 25px 0px 25px;
+		}
+
+/*GALLERY*/
+
+		.gallery
+		{
+			width: 1920px;
+			height: 942px;
+			background-color: #FFFFFF;
+		}
+
+
+		.gallerytop
+		{
+			width: 1920px;
+			height: 209px;
+			background-color: #FFFFFF;
+			font-family: fontmot;
+			letter-spacing: 5px;
+			line-height: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+	
+		}
+
+		.gallerybottom
+		{
+			width: 1920px;
+			height: 654px;
+			background-color: #FFFFFF;
+			display: flex;
+			justify-content: center;
+		}
+
+			.gal1
+			{
+				width: 264px;
+				height: 654px;
+				background: url("../images/gal1_03.png");
+				margin: 0px 10px;
+			}
+
+			.gal2
+			{
+				width: 361px;
+				height: 654px;
+				background: url("../images/gal2_03.jpg");
+				margin: 0px 17px;
+			}
+
+			.gal3
+			{
+				width: 458px;
+				height: 654px;
+				background: url( "../images/gal3_03.jpg");
+				margin: 0px 10px;
+			}
+
+/*LOGOS*/
+
+		.logos
+		{
+			width: 1920px;
+			height: 180px;
+			background-color: #FFFFFF;
+			text-align: center;	
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logobox
+		{
+			width: 150px;
+			height: 30px;
+			background-color: transparent;
+			padding: 0px 57px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+					.logos a:hover
+					{
+						transition: 0.3s;
+						transform: scale(1.3) translateY(-10px);
+						
+						
+					}
+
+/*footer*/
+		
+		.footer
+		{
+			width: 1920px;
+			height: 1361px;
+			background: url("../images/footer_02.jpg");
+		}
+		
+		.footertop
+		{
+			width: 1920px;
+			height: 220px;
+			background-color: transparent;
+			font-family: fontmot;
+			letter-spacing: 5px;
+			line-height: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.footercenter
+		{
+			width: 1920px;
+			height: 258px;
+			background-color: transparent;
+			display: flex;
+			justify-content: center;
+			
+		}
+
+		.center1
+		{
+			width: 550px;
+			height: 258px;
+			background-color: transparent;
+			margin: 0px 30px;
+			font-family: fonthai;
+			letter-spacing: 1px;
+			color: #A9A9A9;
+			
+					
+		}
+
+		.center2
+		{
+			width: 500px;
+			height: 70px;
+			background-color: transparent;
+			float: left;
+			display: flex;
+			
+			
+						
+		}
+
+				.center3
+				{
+					width: 100px;
+					height: 70px;
+					background: url("../images/faces_05.png");
+					float: left;
+					
+				}
+
+				.center4
+				{
+					width: 430px;
+					height: 70px;
+					background-color: transparent;
+					color: #36AEEA;
+
+				}
+		
+
+		.footercenter1
+		{
+			width: 1920px;
+			height: 802px;
+			background-color: transparent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: fontmot;
+			letter-spacing: 2px;
+			color: #36AEEA;
+		}
+
+		.contact
+		{
+			width: 400px;
+			height: 430px;
+			background-color: rgba(241,236,236,0.85);
+			text-align: center;
+			border-radius: 5px;
+		}
+
+		.sendbutton
+		{
+			width: 300px;
+			height: 42px;
+			background-color: #36AEEA;
+			border: none;
+			font-family: fontmot;
+			border-radius: 5px;
+			letter-spacing: 2px;
+			font-size: 20px;
+		}
+
+					.sendbutton a 
+				{
+					text-decoration: none;
+					color:#FFFFFF;
+				}
+
+				.sendbutton a:hover
+				{
+					background-color: #36AEEA;
+					color: black;
+					transition: 0.3s;
+					letter-spacing: 6px;
+					
+					
+				}
+
+		.footerbottom
+		{
+			width: 1920px;
+			height: 81px;
+			background: url("../images/footer2_02.jpg");
+			display: flex;
+			justify-content: center;
+		}
+
+			.bott
+		{
+			width: 300px;
+			height: 81px;
+			background-color: transparent;
+			margin: 0px 70px;
+			display: flex;
+			justify-content: center;
+			align-items: center;		
+		}
+				.bott a:hover
+				{
+					transition: 0.3s;
+					transform: scale(1.2)
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
